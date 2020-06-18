@@ -11,6 +11,7 @@
   --color-neutral-light: #D2D2D2;
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
+  --color-keys-hover: #626a6e;
   --font-size-large: 60px;
   --font-size-medium: 20px;
   --transition: all .2s ease-in-out;
@@ -62,8 +63,23 @@ button, input[type=submit] {
 input[type=submit].incorrect {
   background-color: var(--color-lose);
 }
+input[type=submit].incorrect:hover {
+  background-color: var(--color-lose);
+}
 input[type=submit].correct {
   background-color: var(--color-win);
+}
+input[type=submit].correct:hover {
+  background-color: var(--color-win);
+}
+
+input[type=submit]:hover {
+  background-color: var(--color-keys-hover);
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
 }
 
 #btn__reset {
@@ -75,7 +91,7 @@ input[type=submit].correct {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
+  height: auto;
   max-height: 900px;
   text-align: center;
 }
