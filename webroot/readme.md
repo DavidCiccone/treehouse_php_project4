@@ -9,3 +9,7 @@ Press the start game button. The application then chooses a random phrase from a
 Select letters until the phrase is guessed or make five incorrect guesses to lose.
 
 If the player completes the phrase before they run out of guesses, a winning screen appears. If the player guesses incorrectly 5 times, a losing screen appears.
+
+###### Style Change:
+
+Keyboard color transistions have been added and hover colors changed.
